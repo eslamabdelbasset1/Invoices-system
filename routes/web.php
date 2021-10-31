@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\InvoicesController;
+use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\SectionsController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,6 +29,6 @@ Route::resource('invoices', InvoicesController::class);
 
 Route::resource('sections', SectionsController::class);
 
-
+Route::resource('products', ProductsController::class);
 
 Route::get('/{page}', '\App\Http\Controllers\AdminController@index');
